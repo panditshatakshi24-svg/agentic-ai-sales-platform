@@ -1,0 +1,12 @@
+streamlit
+pandas
+matplotlib
+reportlab
+chromadb
+sentence-transformers
+langchain
+langchain-community
+langchain-core
+langchain-ollama
+langchain-huggingface
+langchain-text-splitters
