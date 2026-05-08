@@ -4,15 +4,22 @@ WORKDIR /app
 
 COPY . .
 
+# Install system packages
+RUN apt-get update && apt-get install -y \
+    curl \
+    zstd
+
+# Upgrade pip
 RUN pip install --upgrade pip
 
+# Install Python requirements
 RUN pip install -r requirements.txt
 
 # Install Ollama
 RUN curl -fsSL https://ollama.com/install.sh | sh
 
-# Pull model
-RUN ollama serve & sleep 10 && ollama pull llama3
+# Pull lightweight model
+RUN ollama serve & sleep 15 && ollama pull phi3
 
 EXPOSE 8501
 
