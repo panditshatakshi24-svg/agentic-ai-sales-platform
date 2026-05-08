@@ -1,0 +1,5 @@
+quantity,unit_price,discount_percent,product_category,region,payment_method
+2,500,10,Electronics,North,Credit Card
+1,1000,5,Electronics,South,UPI
+3,200,0,Fashion,West,Debit Card
+4,150,15,Home Appliances,East,Credit Card
