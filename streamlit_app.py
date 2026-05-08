@@ -330,7 +330,7 @@ if uploaded_file is not None:
     # -----------------------------------
 
     llm = OllamaLLM(
-        model="phi3",
+        model="llama3",
         temperature=0
     )
 
